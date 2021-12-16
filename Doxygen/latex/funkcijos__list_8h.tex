@@ -1,0 +1,113 @@
+\hypertarget{funkcijos__list_8h}{}\doxysection{funkcijos\+\_\+list.\+h File Reference}
+\label{funkcijos__list_8h}\index{funkcijos\_list.h@{funkcijos\_list.h}}
+
+
+Listo funkciju failas.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classzmogus}{zmogus}}
+\item 
+class \mbox{\hyperlink{classstudentas}{studentas}}
+\item 
+struct \mbox{\hyperlink{structlyginimas_pavard}{lyginimas\+Pavard}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a92a247cfe3fb042dfe8c673cc9334013}\label{funkcijos__list_8h_a92a247cfe3fb042dfe8c673cc9334013}} 
+void {\bfseries nuskaitymas} (list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ \&St, string failas)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta nuskaityti duomenis is failo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a650078671c4d21e78aa7190e3fc775e3}\label{funkcijos__list_8h_a650078671c4d21e78aa7190e3fc775e3}} 
+bool {\bfseries vard\+Tikrinimas} (string kint)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta tikrinti ar ivesta varda/pavarde sudaro tik raides. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a033ff8811bcf3b799d0fb9bffa36ef6e}\label{funkcijos__list_8h_a033ff8811bcf3b799d0fb9bffa36ef6e}} 
+string {\bfseries vard\+Ivedimas} (string ivedimas)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta tikrinti ar duomenys ivesti teisingai. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_aba1fecb34074a29974bbd4c0dfcfcfb9}\label{funkcijos__list_8h_aba1fecb34074a29974bbd4c0dfcfcfb9}} 
+bool {\bfseries sk\+Kiekio\+Tikrinimas} (string laik)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta tikrinti ar ivestas skaicius. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_acbfcaae736b4b85457fd3e4ec999cae4}\label{funkcijos__list_8h_acbfcaae736b4b85457fd3e4ec999cae4}} 
+bool {\bfseries sk\+Tikrinimas} (string laik)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta tikrinti ar ivestas skaicius ir ar jis priklauso intervalui \mbox{[}1 -\/ 10\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a736b20ed35c12fa2851ee2d8a430725d}\label{funkcijos__list_8h_a736b20ed35c12fa2851ee2d8a430725d}} 
+int {\bfseries sk\+Ivedimas} (string ivedimas, bool)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta duomenu ivedimui (jei jie neteisingi -\/ prasoma ivesti is naujo). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_ade50272610ab7297791dad08ab45905e}\label{funkcijos__list_8h_ade50272610ab7297791dad08ab45905e}} 
+int {\bfseries suma} (vector$<$ int $>$ nd)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta apskaiciuoti namu darbu pazymiu suma. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a8fb9321e6a33c2e85864e56bdeceb120}\label{funkcijos__list_8h_a8fb9321e6a33c2e85864e56bdeceb120}} 
+float {\bfseries vidurkis} (vector$<$ int $>$ nd)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta apskaiciuoti namu darbu pazymiu vidurki. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a713e0c22bd4e8480810b59c3f14dfe7b}\label{funkcijos__list_8h_a713e0c22bd4e8480810b59c3f14dfe7b}} 
+float {\bfseries mediana} (vector$<$ int $>$ nd)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta apskaiciuoti namu darbu pazymiu mediana. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_af74d64ed5314fb583b1a607f7d2debcc}\label{funkcijos__list_8h_af74d64ed5314fb583b1a607f7d2debcc}} 
+void {\bfseries vid\+Med} (list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ \&St)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta apskaiciuoti galutini studento bala naudojant vidurki arba mediana. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a5861ba256fb28a8d583bd0f6a831358b}\label{funkcijos__list_8h_a5861ba256fb28a8d583bd0f6a831358b}} 
+float {\bfseries galutinis} (float, int egz)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta apskaiciuoti galutini bala. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_afaaddfa20d94c6fa85fdc2839f90fd77}\label{funkcijos__list_8h_afaaddfa20d94c6fa85fdc2839f90fd77}} 
+int {\bfseries atsitiktiniai} ()
+\begin{DoxyCompactList}\small\item\em Funkcija skirta atsitiktiniu duomenu generavimui. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a2a5b4ab09bd332efb7c7aa75f89c8a6a}\label{funkcijos__list_8h_a2a5b4ab09bd332efb7c7aa75f89c8a6a}} 
+int {\bfseries ilg\+Pavarde} (list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ St)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta rasti ilgiausia studento pavarde. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a2b10ec9ccd3d8421dec895e94cbef8fe}\label{funkcijos__list_8h_a2b10ec9ccd3d8421dec895e94cbef8fe}} 
+int {\bfseries ilg\+Vardas} (list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ St)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta rasti ilgiausia studento varda. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a28d0b9a1444ce3fa71c06f0e7314746b}\label{funkcijos__list_8h_a28d0b9a1444ce3fa71c06f0e7314746b}} 
+void {\bfseries spausdinimas} (list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ St, string failas)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta duomenims isspausdinti. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a088267ea5bea7857991c6ebc38f8e305}\label{funkcijos__list_8h_a088267ea5bea7857991c6ebc38f8e305}} 
+void {\bfseries pagalbine} (list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ \&St)
+\begin{DoxyCompactList}\small\item\em Pagabine funkcija. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a6a75bf2880bcf38dabb7634e6d1210f7}\label{funkcijos__list_8h_a6a75bf2880bcf38dabb7634e6d1210f7}} 
+bool {\bfseries patvirtinimas} ()
+\begin{DoxyCompactList}\small\item\em Funkcija skirta tikrinti pasirinkima (t/n) -\/ taip/ne. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_ab60b80371fb4202af6e689e4882f5c45}\label{funkcijos__list_8h_ab60b80371fb4202af6e689e4882f5c45}} 
+void {\bfseries rikiavimas} (list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ \&St)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta isrikiuoti studentus pagal ju pavardes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_af1b4431277a1f032d477a467c4e748d3}\label{funkcijos__list_8h_af1b4431277a1f032d477a467c4e748d3}} 
+void {\bfseries generavimas} (int sk, string \&failas)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta generuoti failus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_aa60ced4c90bb31753c86487cb178d080}\label{funkcijos__list_8h_aa60ced4c90bb31753c86487cb178d080}} 
+int {\bfseries pasirinkimas} ()
+\begin{DoxyCompactList}\small\item\em Funkcija skirta pasirinkti kokio dydzio failas bus sugeneruotas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a673ab8dc1b4440c9a14c399419df2445}\label{funkcijos__list_8h_a673ab8dc1b4440c9a14c399419df2445}} 
+int {\bfseries sk\+Ivedimas} ()
+\begin{DoxyCompactList}\small\item\em Funkcija skirta duomenu ivedimui (jei jie neteisingi -\/ prasoma ivesti is naujo). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a39356327be9fffa2a85ca1ac0bb774b0}\label{funkcijos__list_8h_a39356327be9fffa2a85ca1ac0bb774b0}} 
+bool {\bfseries sk\+Gen\+Tikrinimas} (string laik)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta tikrinti failo generavimui ivesta skaiciu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a62da3cf4eed3d390ae7f428a68778aa6}\label{funkcijos__list_8h_a62da3cf4eed3d390ae7f428a68778aa6}} 
+void {\bfseries skirstymas1} (list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ St, list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ \&Vargsai, list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ \&Genijai)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta suskirstyti studentus pagal ju galutini bala, naudojant I -\/ aja strategija. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a7e373a0b5863f052fca463eea4d6605b}\label{funkcijos__list_8h_a7e373a0b5863f052fca463eea4d6605b}} 
+void {\bfseries skirstymas2} (list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ \&St, list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ \&Genijai)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta suskirstyti studentus pagal ju galutini bala, naudojant II -\/ aja strategija. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcijos__list_8h_a7fdc20be81220dfeef86946f9a0b4d29}\label{funkcijos__list_8h_a7fdc20be81220dfeef86946f9a0b4d29}} 
+void {\bfseries skirstymas3} (list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ \&St, list$<$ \mbox{\hyperlink{classstudentas}{studentas}} $>$ \&Genijai)
+\begin{DoxyCompactList}\small\item\em Funkcija skirta suskirstyti studentus pagal ju galutini bala, naudojant III -\/ aja strategija. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Listo funkciju failas. 
+
+Aprasytos klases\+: zmogus ir studentas, funkciju prototipai. 
