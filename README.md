@@ -177,6 +177,7 @@ III - oji strategija. Studentų, kurių galutinis balas yra >= 5, duomenys kelia
 * [v1.1](https://github.com/austejaha/Projektas-II/tree/v1.1) Struktūra pakeista į klasę, atnaujinta spartos analizė.
 * [v1.2](https://github.com/austejaha/Projektas-II/tree/v1.2) Realizuota **„Rule of three"**.
 * [v1.5](https://github.com/austejaha/Projektas-II/tree/v1.5) Sukurtos dvi klasės: **bazinė**: ```zmogus``` ir **išvestinė**: ```studentas```.
+* [v2.0](https://github.com/austejaha/Projektas-II/tree/v2.0) Sukurta dokumentacija naudojant ```Doxygen```, realizuoti ```Unit testai```.
 
 
 
