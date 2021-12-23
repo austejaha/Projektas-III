@@ -1,9 +1,3 @@
-/**
-* @file funkcijos.h
-* Vektoriaus funkciju failas. Aprasytos klases: zmogus ir studentas, funkciju prototipai.
-*/
-
-
 #ifndef FUNKCIJOS_H
 #define FUNKCIJOS_H
 
@@ -26,7 +20,7 @@ static std::chrono::steady_clock::time_point pradzia;
 using std::cout;
 using std::cin;
 using std::endl;
-using std::string; 
+using std::string;
 using std::stoi;
 using std::setw;
 using std::setprecision;
@@ -35,33 +29,33 @@ using std::vector;
 using std::left;
 using std::fixed;
 using std::ifstream;
-using std::stringstream; 
+using std::stringstream;
 using std::ofstream;
 using std::to_string;
 
 class zmogus
 {
-    protected:
-        string vard;
-        string pavard;
-    public:
-        string getVard() const { return vard; }
-        void setVard(string v) { vard = v; }
+protected:
+    string vard;
+    string pavard;
+public:
+    string getVard() const { return vard; }
+    void setVard(string v) { vard = v; }
 
-        string getPavard() const { return pavard; }
-        void setPavard(string p) { pavard = p; }
+    string getPavard() const { return pavard; }
+    void setPavard(string p) { pavard = p; }
 
-        virtual ~zmogus() = 0;
+    virtual ~zmogus() = 0;
 };
 
 class studentas : public zmogus
 {
-    private:
-        vector <int> nd;
-        int egz;
-        float glt;
+private:
+    vector <int> nd;
+    int egz;
+    float glt;
 
-    public:
+public:
     studentas() : egz(0) {};
 
     int getEgz() const { return egz; }
@@ -75,11 +69,11 @@ class studentas : public zmogus
 
     studentas(const studentas& x) : //kopijavimo konstruktorius
         egz(x.egz), glt(x.glt),
-        nd(x.nd) 
-        {
-            vard = x.getVard();
-            pavard = x.getPavard(); 
-        }
+        nd(x.nd)
+    {
+        vard = x.getVard();
+        pavard = x.getPavard();
+    }
 
     studentas& operator = (const studentas& x) //kopijavimo priskyrimo konstruktorius
     {
@@ -95,12 +89,9 @@ class studentas : public zmogus
 
 };
 
-struct lyginimasPavard{
-    bool operator()(const studentas& a, const studentas& b){return(b.getPavard().compare(a.getPavard()));}
-};
 
 //nuskaito duomenis is failo
-void nuskaitymas(vector <studentas> &St, string failas);
+void nuskaitymas(vector <studentas>& St, string failas);
 //tikrina ar ivesta varda/pavarde sudaro tik raides
 bool vardTikrinimas(string kint);
 //ivedami duomenis, jei neteisingi - prasoma ivesti is naujo
@@ -118,7 +109,7 @@ float vidurkis(vector <int> nd);
 //skaiciuoja mediana
 float mediana(vector <int> nd);
 //pasirenka arba vidurki, arba mediana
-void vidMed(vector <studentas> &St);
+void vidMed(vector <studentas>& St);
 //skaiciuoja galutini bala
 float galutinis(float, int egz);
 //sugeneruoja atsitiktinius duomenis
@@ -130,13 +121,15 @@ int ilgVardas(vector <studentas> St);
 //duomenu spausdinimui skirta funkcija
 void spausdinimas(vector <studentas> St, string failas);
 //pagalbine funkcija
-void pagalbine(vector <studentas> &St);
+void pagalbine(vector <studentas>& St);
 //tikrina pasirinkima (t/n) - taip/ne
 bool patvirtinimas();
+//pagalbine rikiavimui
+bool pavardLyginimas(studentas& a, studentas& b);
 //isrikiuoja studentu pavardes
-void rikiavimas(vector <studentas> &St);
+void rikiavimas(vector <studentas>& St);
 //generuoja failus
-void generavimas(int sk, string &failas);
+void generavimas(int sk, string& failas);
 //leidzia pasirinkti kokio dydzio failas bus generuojamas
 int pasirinkimas();
 //ivedami duomenis, jei neteisingi - prasoma ivesti is naujo
@@ -144,9 +137,9 @@ int skIvedimas();
 //tikrina generavimui ivesta skaiciu
 bool skGenTikrinimas(string laik);
 //isskirsto studentus pagal galutini bala
-void skirstymas1(vector <studentas> St, vector <studentas> &Vargsai, vector <studentas> &Genijai);
-void skirstymas2(vector <studentas> &St, vector <studentas> &Genijai);
-void skirstymas3(vector <studentas> &St, vector <studentas> &Genijai);
+void skirstymas1(vector <studentas> St, vector <studentas>& Vargsai, vector <studentas>& Genijai);
+void skirstymas2(vector <studentas>& St, vector <studentas>& Genijai);
+void skirstymas3(vector <studentas>& St, vector <studentas>& Genijai);
 
-inline zmogus::~zmogus(){}
+inline zmogus::~zmogus() {}
 #endif
