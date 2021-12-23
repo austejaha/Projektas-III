@@ -160,11 +160,8 @@ III - oji strategija. Studentų, kurių galutinis balas yra >= 5, duomenys kelia
 
 ### Įdiegimas ####
 * Atsisiųskite ir išarchyvuokite programą;
-* Paleiskite programą naudodami komandinę eilutę:
-```
-   g++ -o main projektas.cpp
-   ./main
-   ```
+* Paleiskite ```setup.exe``` failą (Setup aplanke) ir instaliuokite programą.
+* Norėdami programą išinstaliuoti ar atnaujinti, atidarius ```setup.exe``` failą atitinkamai paspauskite ```Remove Setup```, ```Repair Setup```.
 
 ### Versijos ###
 
@@ -178,6 +175,7 @@ III - oji strategija. Studentų, kurių galutinis balas yra >= 5, duomenys kelia
 * [v1.2](https://github.com/austejaha/Projektas-II/tree/v1.2) Realizuota **„Rule of three"**.
 * [v1.5](https://github.com/austejaha/Projektas-II/tree/v1.5) Sukurtos dvi klasės: **bazinė**: ```zmogus``` ir **išvestinė**: ```studentas```.
 * [v2.0](https://github.com/austejaha/Projektas-II/tree/v2.0) Sukurta dokumentacija naudojant ```Doxygen```, realizuoti ```Unit testai```.
+* [v3.0](https://github.com/austejaha/Projektas-III/tree/v3.0) Sukurtas programos diegimo failas ```setup.exe```.
 
 
 
